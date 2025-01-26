@@ -1,0 +1,84 @@
+/* ApologyMessage.css */
+.apology-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #f9c5d1, #9795ef);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Arial", sans-serif;
+}
+
+.message {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.message-text {
+  margin: 0 auto;
+}
+
+.sparkle {
+  color: #ffcc00;
+  animation: sparkle 1s infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+.icon, .balloon, .star {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: float 5s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.youtube-music {
+  display: none;
+}
+
+.play-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
